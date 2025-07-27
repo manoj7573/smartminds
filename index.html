@@ -19,13 +19,15 @@
     .header {
       background-color: #004d40;
       color: white;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .header .row {
+      align-items: center;
     }
 
     .header-logo {
-      max-height: 80px;
-      margin-bottom: 15px;
+      max-height: 60px;
     }
 
     .section-title {
@@ -50,12 +52,12 @@
       background-position: center;
       background-attachment: fixed;
       color: white;
-      padding: 100px 20px;
+      padding: 80px 20px;
     }
 
     .overlay {
       background-color: rgba(0, 0, 0, 0.7);
-      padding: 40px;
+      padding: 30px;
       border-radius: 10px;
     }
 
@@ -72,6 +74,27 @@
       padding: 20px;
       border-radius: 10px;
       text-align: center;
+    }
+
+    /* Mobile Fix for background-attachment */
+    @media (max-width: 768px) {
+      .parallax-section {
+        background-attachment: scroll !important;
+        padding: 60px 15px;
+      }
+
+      .overlay {
+        padding: 20px;
+      }
+
+      .header .row {
+        text-align: center;
+      }
+
+      .header .col-md-2 {
+        text-align: center !important;
+        margin-bottom: 15px;
+      }
     }
   </style>
 </head>
@@ -92,7 +115,7 @@
     </div>
   </div>
 
-  <!-- Why Choose Us Section -->
+  <!-- Why Choose Us -->
   <section class="parallax-section" style="background-image: url('image1.jpeg');">
     <div class="container overlay">
       <h3 class="section-title">Why Choose Us?</h3>
@@ -109,8 +132,8 @@
     </div>
   </section>
 
-  <!-- Courses Offered Section -->
-  <section class="parallax-section" style="background-image: url('image3.jpeg');">
+  <!-- Courses Offered -->
+  <section class="parallax-section" style="background-image: url('image4.jpeg');">
     <div class="container overlay">
       <h3 class="section-title">Our Courses</h3>
       <ul class="list-group list-group-flush">
@@ -125,7 +148,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="parallax-section" style="background-image: url('image4.jpeg');">
+  <section class="parallax-section" style="background-image: url('image3.jpeg');">
     <div class="container overlay">
       <div class="row">
         <div class="col-md-6">
